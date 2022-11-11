@@ -1,2 +1,2 @@
-# pl_project2022
+# WEB PROJECT
 Web project in TPL with Lexical, Semantic and Syntax analysis
