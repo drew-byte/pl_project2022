@@ -1,0 +1,247 @@
+#head {
+    font-size: 200px;
+    margin-top: 120px;
+    margin-bottom: 15px;
+    color: #bac3c3;
+}
+
+.span1 {
+    color: #6883af;
+}
+
+.span2 {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.span3 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Comic Neue', cursive;
+
+}
+
+section {
+    color: rgb(255, 255, 255);
+    height: 850px;
+    background: #273c4c;
+}
+h1 { 
+    font-size: 350px;
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Nerko One', cursive;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Sono', sans-serif;
+}
+h3 {
+    font-size: 30px;
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Nerko One', cursive;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Sono', sans-serif;
+}
+
+button {
+    --color: #6883af;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+}
+
+button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+button:hover {
+    color: #fff;
+}
+
+button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+button:active:before {
+    background: #fff;
+    transition: background 0s;
+}
+
+#program {
+    background: linear-gradient(120deg, #4bc3c4, #3a848b, #273c4c);
+    height: auto;
+}
+
+#card {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #011522;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+#tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+
+#circle {
+    padding: 0 4px;
+}
+
+.box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: #ff605c;
+}
+
+.yellow {
+    background-color: #ffbd44;
+}
+
+.green {
+    background-color: #00ca4e;
+}
+.card1 {
+    width: 250px;
+    height: 350px;
+    background: #336a74;
+    border-radius: 50px;
+    text-align: center;
+    color: #fff;
+    font-family: inherit;
+    z-index: 1;
+  }
+  
+  .img {
+    display: flex;
+    margin: 100px auto 20px auto;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    z-index: 99;
+    background-color: #152f50;
+  }
+  
+  p {
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .head {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .heading {
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  
+  svg {
+    padding: 0 5px;
+    cursor: pointer;
+  }
+  
+  .card1:hover .img {
+    transform: scale(1.1);
+    border: 1px solid #f0f0f0;
+  }
+  
+  .card1:hover h1,
+  .card1:hover p {
+    opacity: 1;
+  }
+
+
+
+@keyframes curbl {
+
+    0% {
+        background: #ffffff;
+    }
+
+    49% {
+        background: #ffffff;
+    }
+
+    60% {
+        background: transparent;
+    }
+
+    99% {
+        background: transparent;
+    }
+
+    100% {
+        background: #ffffff;
+    }
+}
+
+@media (max-width:765px) {
+    #head {
+        font-size: 100px;
+    }
+
+
+}
+@media (max-width:991px) {
+    #card {
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media (max-width:360px) {
+    #head {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+}
