@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>LSS</title>
+    <!--Bootstrap location not CDN-->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Navbar-Right-Links-Dark-icons.css">
@@ -36,95 +37,108 @@
         </div>
     </nav>
     <section class="py-4 py-xl-5" id="program">
-        <div class="container">
+        <div class="container text-center">
             <div class="text-center p-4 p-lg-5"
                 style="margin-top: 100px;margin-bottom: 20px;padding-bottom: 0px;padding-top: 0px;">
 
                 <h1 style="margin-bottom: 50px;">Input the Tokens!</h1>
-                    
 
 
                 <div class="row">
-                    <div class="col col-lg-6 col-sm-12">
-                        <div id="card">
-                            <div id="tools">
-                                <div id="circle">
-                                    <span class="red box"></span>
-                                </div>
-                                <div id="circle">
-                                    <span class="yellow box"></span>
-                                </div>
-                                <div id="circle">
-                                    <span class="green box"></span>
-                                </div>
-                            </div>
-                            <div id="card__content">
-                            </div>
-                        </div>
+                    <div class="col col-lg-4" style="background-color: black;border:2px solid;border-radius:40px;">
+                        <span class="span3">Lexical</span>
                     </div>
-                    <div class="col col-lg-6 col-sm-12">
-                        <div id="card">
-                            <div id="tools">
-                                <div id="circle">
-                                    <span class="red box"></span>
-                                </div>
-                                <div id="circle">
-                                    <span class="yellow box"></span>
-                                </div>
-                                <div id="circle">
-                                    <span class="green box"></span>
-                                </div>
-                            </div>
-                            <div id="card__content">
-                            </div>
-                        </div>
+                    <div class="col col-lg-4" style="background-color: black;border:2px solid;border-radius:40px;">
+                        <span class="span3">Syntax</span>
                     </div>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="row text-center" style="padding-left: 150px;padding-right:150px;">
+                    <div class="col col-lg-4" style="background-color: black;border:2px solid;border-radius:40px;">
+                        <span class="span3">Semantic</span>
+                    </div>
 
-                <div class="col col-lg-4">
-                    <a href="workspace.html"><button class="btn btn-light fs-5 me-2 py-2 px-10"
-                            style="margin-bottom:60px;margin-top:10px;border-radius:40px;" type="button"><span class="span3">Lexical</span></button></a>
+
+
+
+
+                    <div class="row">
+                        <div class="col col-lg-6 col-sm-12" style="padding-top: 50px;">
+                            <div id="card">
+                                <div id="tools">
+                                    <div id="circle">
+                                        <span class="red box"></span>
+                                    </div>
+                                    <div id="circle">
+                                        <span class="yellow box"></span>
+                                    </div>
+                                    <div id="circle">
+                                        <span class="green box"></span>
+                                    </div>
+                                </div>
+                                <div id="card__content">
+                                    <textarea class="textarea" name="" id=""
+                                        placeholder="Write your code here..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-6 col-sm-12" style="padding-top: 50px;">
+                            <div id="card">
+                                <div id="tools">
+                                    <div id="circle">
+                                        <span class="red box"></span>
+                                    </div>
+                                    <div id="circle">
+                                        <span class="yellow box"></span>
+                                    </div>
+                                    <div id="circle">
+                                        <span class="green box"></span>
+                                    </div>
+                                </div>
+                                <div id="card__content">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col col-lg-4">
-                    <a href="workspace.html"><button class="btn btn-light fs-5 me-2 py-2 px-10"
-                            style="margin-bottom:60px;margin-top:10px;border-radius:40px;" type="button"><span class="span3">Syntax</span></button></a>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col col-lg-4">
+                        <a href="workspace.html"><button class="btn btn-light fs-5 me-2 py-2 px-10"
+                                style="margin-bottom:60px;margin-top:10px;border-radius:40px;" type="button"><span
+                                    class="span3">Enter</span></button></a>
+                    </div>
+                    <div class="col col-lg-4">
+                        <a href="workspace.html"><button class="btn btn-light fs-5 me-2 py-2 px-10"
+                                style="margin-bottom:60px;margin-top:10px;border-radius:40px;" type="button"><span
+                                    class="span3">Open
+                                    File</span></button></a>
+                    </div>
+                    <div class="col col-lg-4">
+                        <a href="workspace.html"><button class="btn btn-light fs-5 me-2 py-2 px-10"
+                                style="margin-bottom:60px;margin-top:10px;border-radius:40px;" type="button"><span
+                                    class="span3">Clear</span></button></a>
+                    </div>
                 </div>
-                <div class="col col-lg-4">
-                    <a href="workspace.html"><button class="btn btn-light fs-5 me-2 py-2 px-10"
-                            style="margin-bottom:60px;margin-top:10px;border-radius:40px;" type="button"><span class="span3">Semantic</span></button></a>
-                </div>
-                <div class="col col-lg-6">
-                    <a href="workspace.html"><button class="btn btn-light fs-5 me-2 py-2 px-10"
-                            style="margin-bottom:60px;margin-top:10px;border-radius:40px;" type="button"><span class="span3">Open
-                                File</span></button></a>
-                </div>
-                <div class="col col-lg-6">
-                    <a href="workspace.html"><button class="btn btn-light fs-5 me-2 py-2 px-10"
-                            style="margin-bottom:60px;margin-top:10px;border-radius:40px;" type="button"><span class="span3">Clear</span></button></a>
-                </div>
+
+
             </div>
 
         </div>
     </section>
-    <footer class="text-center bg-dark">
-        <div class="container text-white py-4 py-lg-5">
-            <ul class="list-inline">
-                <li class="list-inline-item me-4"><a class="link-light" href="#"><i class="fa-brands fa-github fa-2xl">
-                            <span class="span2">Cunanan</span></i></a></li>
-                <li class="list-inline-item me-4"><a class="link-light" href="#"><i class="fa-brands fa-github fa-2xl">
-                            <span class="span2">Manzanillo</span></i></a></li>
-                <li class="list-inline-item me-4"><a class="link-light" href="#"><i class="fa-brands fa-github fa-2xl">
-                            <span class="span2">Erise</span></i></a></li>
-            </ul>
-            <br>
-            <p class="text-muted mb-0">Copyright © 2022 Cunanan, Manzanillo and Erise</p>
-        </div>
-    </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
+<footer class="text-center bg-dark">
+    <div class="container text-white py-4 py-lg-5">
+      <ul class="list-inline">
+        <li class="list-inline-item me-4"><a class="link-light" href="#"><i class="fa-brands fa-github fa-2xl"> <span
+                class="span2">Cunanan</span></i></a></li>
+        <li class="list-inline-item me-4"><a class="link-light" href="#"><i class="fa-brands fa-github fa-2xl"> <span
+                class="span2">Manzanillo</span></i></a></li>
+        <li class="list-inline-item me-4"><a class="link-light" href="#"><i class="fa-brands fa-github fa-2xl"> <span
+                class="span2">Erise</span></i></a></li>
+      </ul>
+      <br>
+      <h6 class="text-muted mb-0" id="copyright">Copyright © 2022 Cunanan, Manzanillo and Erise</h6>
+    </div>
+  </footer>
 
 </html>

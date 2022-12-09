@@ -26,7 +26,8 @@ section {
     height: 850px;
     background: #273c4c;
 }
-h1 { 
+
+h1 {
     font-size: 350px;
     font-family: 'Comic Neue', cursive;
     font-family: 'Dancing Script', cursive;
@@ -36,6 +37,7 @@ h1 {
     font-family: 'Satisfy', cursive;
     font-family: 'Sono', sans-serif;
 }
+
 h3 {
     font-size: 30px;
     font-family: 'Comic Neue', cursive;
@@ -101,6 +103,11 @@ button:active:before {
     height: auto;
 }
 
+p {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
 #card {
     width: 400px;
     height: 300px;
@@ -140,6 +147,7 @@ button:active:before {
 .green {
     background-color: #00ca4e;
 }
+
 .card1 {
     width: 250px;
     height: 350px;
@@ -149,9 +157,9 @@ button:active:before {
     color: #fff;
     font-family: inherit;
     z-index: 1;
-  }
-  
-  .img {
+}
+
+.img {
     display: flex;
     margin: 100px auto 20px auto;
     width: 100px;
@@ -164,39 +172,46 @@ button:active:before {
     transition: all 0.5s;
     z-index: 99;
     background-color: #152f50;
-  }
-  
-  p {
-    opacity: 0;
-    transition: all 0.5s;
-  }
-  .head {
+}
+
+.head {
     text-align: center;
     padding: 10px;
     font-size: 20px;
-  }
-  .heading {
+}
+
+.heading {
     text-align: center;
     padding: 10px;
     font-weight: 500;
     font-size: 18px;
-  }
-  
-  svg {
+}
+
+svg {
     padding: 0 5px;
     cursor: pointer;
-  }
-  
-  .card1:hover .img {
+}
+
+.card1:hover .img {
     transform: scale(1.1);
     border: 1px solid #f0f0f0;
-  }
-  
-  .card1:hover h1,
-  .card1:hover p {
-    opacity: 1;
-  }
+}
 
+.card1:hover h1,
+.card1:hover p {
+    opacity: 1;
+}
+
+.textarea {
+    margin-top: 20px;
+    height: 220px;
+    width: 350px;
+    border: 0px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+}
 
 
 @keyframes curbl {
@@ -229,11 +244,17 @@ button:active:before {
 
 
 }
+
 @media (max-width:991px) {
     #card {
         margin-bottom: 20px;
+
     }
-    
+    .card1 {
+        width: 200px;
+        height: 250;
+    }
+
 }
 
 @media (max-width:360px) {
