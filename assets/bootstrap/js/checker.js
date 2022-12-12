@@ -49,11 +49,53 @@ function getChecked() {
 
     if(getSyntax==="<data_type> <identifier> <assignment_operator> <value> <delimiter>" || getSyntax==="<data_type> <identifier> <delimiter>")
     {
-        document.getElementById('cardOutput').textContent = finalArray;
+        const semanticDataType = array[0];
+        const semanticVal = array[3];
+        
+            try {
+                if (
+                    semanticDataType === "int" &&
+                    !semanticVal.includes(".") &&
+                    !semanticVal.includes("'") &&
+                    !semanticVal.includes('"')
+                ) {
+                    document.getElementById('cardOutput').textContent = finalArray;
+                }
+                else if (
+                    (semanticDataType === "double" || semanticDataType === "float") &&
+                    semanticVal.includes(".") &&
+                    !semanticVal.includes("'") &&
+                    !semanticVal.includes('"')
+                ) {
+                    document.getElementById('cardOutput').textContent = finalArray;
+                }
+                else if (semanticDataType === "String" && semanticVal.includes('"')) {
+                    document.getElementById('cardOutput').textContent = finalArray;
+                }
+                else if (semanticDataType === "boolean" && (semanticVal.includes("true") || semanticVal.includes("false")) &&
+                    !value.includes(".") &&
+                    !value.includes("'") &&
+                    !value.includes('"')
+                ) {
+                    document.getElementById('cardOutput').textContent = finalArray;
+                }
+                else if (semanticDataType === "char" && semanticVal.length === 3 && semanticVal.includes("'")) {
+                    document.getElementById('cardOutput').textContent = finalArray;
+                }
+                else
+                {
+                    document.getElementById('cardOutput').textContent = "Semantically Error!";
+                }
+            }
+            catch (e) {
+                document.getElementById('cardOutput').textContent = "Semantically Error!";
+            }
+       
     }
     else
     {
         document.getElementById('cardOutput').textContent = "Syntax Error!";
+        
     }
 
 
