@@ -10,6 +10,8 @@ function getChecked() {
 
     array.forEach(element => {
 
+        
+
         if (element.includes(choices[0]) || element.includes(choices[1]) || element.includes(choices[2]) || element.includes(choices[3])) {
             finalArray[x] = "<data_type>";
 
@@ -42,7 +44,6 @@ function getChecked() {
 
 
     });
-    
 
     const getSyntax = finalArray.join(" ");
 
@@ -56,6 +57,9 @@ function getChecked() {
     }
 
 
+
+
+    
 }
 
 
