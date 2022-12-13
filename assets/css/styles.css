@@ -30,14 +30,13 @@ section {
 }
 
 h1 {
-    font-size: 350px;
     font-family: 'Comic Neue', cursive;
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Kaushan Script', cursive;
-    font-family: 'Nerko One', cursive;
-    font-family: 'Rubik Mono One', sans-serif;
-    font-family: 'Satisfy', cursive;
-    font-family: 'Sono', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Nerko One', cursive;
+font-family: 'Rubik Mono One', sans-serif;
+font-family: 'Satisfy', cursive;
+font-family: 'Sono', sans-serif;
 }
 
 h3 {

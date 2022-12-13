@@ -83,7 +83,6 @@ function getChecked() {
                     else {
                         document.getElementById('cardOutput').textContent = "Semantically Error!";
                     }
-                    document.getElementById("semBG").style.backgroundColor = "red";
                 }
                 catch (e) {
                     document.getElementById('cardOutput').textContent = "Semantically Error!";
