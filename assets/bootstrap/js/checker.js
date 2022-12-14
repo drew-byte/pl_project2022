@@ -82,6 +82,7 @@ function getChecked() {
                     }
                     else {
                         document.getElementById('cardOutput').textContent = "Semantically Error!";
+                        document.getElementById("semBG").style.backgroundColor = "red";
                     }
                 }
                 catch (e) {
@@ -98,6 +99,77 @@ function getChecked() {
             }
 
         });
+    }
+    else if (array.length === 2 || array.length === 3) {
+        array.forEach(element => {
+            if (element.includes(choices[0]) || element.includes(choices[1]) || element.includes(choices[2]) || element.includes(choices[3])) {
+                finalArray[x] = "<data_type>";
+
+            }
+            else if (element.includes(";")) {
+                if (!element.includes("\"") || element.includes(";")
+                    || !element.includes("'")) {
+                    finalArray[x + 1] = "<identifier>";
+                    finalArray[x + 2] = "<delimiter>";
+
+                } else if (element.includes(";")) {
+                    finalArray[x + 2] = "<delimiter>";
+
+                }
+
+            }
+            else {
+                finalArray[x + 1] = "<identifier>";
+            }
+            const getSyntax = finalArray.join(" ");
+            document.getElementById("lexiBG").style.backgroundColor = "green";
+            if (getSyntax === "<data_type> <identifier> <assignment_operator> <value> <delimiter>" || getSyntax === "<data_type> <identifier> <delimiter>") {
+                const semanticDataType = array[0];
+                document.getElementById("synBG").style.backgroundColor = "green";
+
+                try {
+                    if (semanticDataType === "int") {
+                        document.getElementById('cardOutput').textContent = finalArray;
+                        document.getElementById("semBG").style.backgroundColor = "green";
+                    }
+                    else if (semanticDataType === "double" || semanticDataType === "float")
+                     {
+                        document.getElementById('cardOutput').textContent = finalArray;
+                        document.getElementById("semBG").style.backgroundColor = "green";
+                    }
+                    else if (semanticDataType === "String") {
+                        document.getElementById('cardOutput').textContent = finalArray;
+                        document.getElementById("semBG").style.backgroundColor = "green";
+                    }
+                    else if (semanticDataType === "boolean") {
+                        document.getElementById('cardOutput').textContent = finalArray;
+                        document.getElementById("semBG").style.backgroundColor = "green";
+                    }
+                    else if (semanticDataType === "char") {
+                        document.getElementById('cardOutput').textContent = finalArray;
+                        document.getElementById("semBG").style.backgroundColor = "green";
+                    }
+                    else {
+                        document.getElementById('cardOutput').textContent = "Semantically Error!";
+                        document.getElementById("semBG").style.backgroundColor = "red";
+                    }
+                }
+                catch (e) {
+                    document.getElementById('cardOutput').textContent = "Semantically Error!";
+                    document.getElementById("semBG").style.backgroundColor = "red";
+                }
+
+
+            }
+            else {
+                document.getElementById('cardOutput').textContent = "Syntax Error!";
+                document.getElementById("synBG").style.backgroundColor = "red";
+
+            }
+        });
+
+
+
     }
     else {
         document.getElementById('cardOutput').textContent = "Lexical Error!";
